@@ -1,0 +1,14 @@
+<%= link_to 'Register Client', new_client_path %>
+
+<div id='clients'>
+<% @clients.each do |client| %>
+
+  <div class='client-show'>
+    <h2>Client ID: #<%= client.id %></h2>
+
+    <p>Name: <%= link_to client.name, client %></p>
+    <p>Current Blance: <%= client.balance %></p>
+
+  </div>
+<% end %>
+</div>

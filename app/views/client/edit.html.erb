@@ -1,0 +1,16 @@
+
+<%= form_for @client do |form| %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div class="field">
+    <%= form.label :balance %>
+    <%= form.text_field :balance %>
+  </div>
+  <div class="action">
+    <%= form.submit 'Update' %>
+  </div>
+
+<% end %>

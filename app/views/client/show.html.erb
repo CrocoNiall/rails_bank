@@ -1,0 +1,13 @@
+<h2>Client ID: #<%= @client.id %></h2>
+
+  <div class='showClient'>
+
+    <p>Name: <%= @client.name %></p>
+    <p>Current Balance: <%= @client.balance %></p>
+    <%= link_to 'Delete Client', @client, method: :delete, data: { confirm: "Are you sure?" } %>
+    <%= link_to 'Edit Client', edit_client_path(@client) %><br>
+    <%= link_to '<< Back to Clients', client_index_path %>
+
+
+  </div>
+
